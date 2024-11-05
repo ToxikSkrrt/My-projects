@@ -1,0 +1,7 @@
+.vscode/launch.json
+pdl.code-workspace
+.vscode/settings.json
+backend/src/main/resources/public/index.html
+images/*
+images
+images/metadata.properties

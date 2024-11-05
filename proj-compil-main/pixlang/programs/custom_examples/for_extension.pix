@@ -1,0 +1,16 @@
+// Extension Simplification ++ (For)
+$<
+    For x From 1 To 1 Step 1 $<
+        Print(x);
+        Print(x + 2)
+    >$;
+
+    For y From 1. To 4. Step 4. $<
+        Print(y);
+        Print(y + 2.)
+    >$;
+
+    For x From 10 To 10 Step 1 $<
+        Print(x)
+    >$
+>$

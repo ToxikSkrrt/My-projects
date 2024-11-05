@@ -1,0 +1,29 @@
+default:
+  tags:
+    - CREMI 
+    - Focal/Fossa
+
+stages:
+  - build
+  - test
+  - coverage
+
+buid-job1:
+  stage: build
+  script :
+    - pip install coverage
+    - pip install tk
+
+test-job1:
+  stage: test
+  script :
+    - cd VideoTracker/tests
+    - python3 -m unittest -v Test_Point_FileRepo.py
+
+coverage-job1:
+  stage: coverage
+  script :
+    - cd VideoTracker/tests
+    - coverage run -m unittest
+    - coverage run -m pytest Test_Point_FileRepo.py
+    - coverage report -m

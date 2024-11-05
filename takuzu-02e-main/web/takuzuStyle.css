@@ -1,0 +1,18 @@
+.btnMenu button {
+    background-color: plum;
+    border: 1px solid rgb(203, 2, 203);
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+    float: left;
+}
+
+.btnMenu:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btnMenu button:hover {
+    background-color: purple;
+}

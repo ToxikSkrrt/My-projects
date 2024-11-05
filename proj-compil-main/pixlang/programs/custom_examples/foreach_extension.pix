@@ -1,0 +1,28 @@
+// Extension Simplification++ (Foreach)
+$<
+    Foreach x In [1] $<
+        Print(x);
+        Print(x + 2)
+    >$;
+
+    Foreach y In [1.] $<
+        Print(y);
+        Print(y + 2.)
+    >$;
+
+    Foreach x In [True] $<
+        Print(x)
+    >$;
+
+    Foreach x In [Coord(20, 30)] $<
+        Print(x)
+    >$;
+
+    Foreach x In [Color(255, 0, 0)] $<
+        Print(x)
+    >$;
+
+    Foreach x In [Pixel(Coord(20, 30), Color(255, 0, 0))] $<
+        Print(x)
+    >$
+>$

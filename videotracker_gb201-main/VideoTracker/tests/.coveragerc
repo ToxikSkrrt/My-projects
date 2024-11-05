@@ -1,0 +1,9 @@
+[run]
+branch = True
+
+include =
+    ../src/models/Point_FileRepo.py
+
+omit =
+    ../src/models/*init*
+    ../src/*init*
